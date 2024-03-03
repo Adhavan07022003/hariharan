@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;800&display=swap");
+
+:root {
+  --primary-color: #e79b0c;
+  --primary-color-dark: #d7204e;
+  --secondary-color: #000000;
+  --text-dark: #1f2937;
+  --extra-light: #ffffff;
+
+  --max-width: 600px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  min-height: 100vh;
+  background-color: var(--secondary-color);
+  display: flex;
+}
+
+.container__left,
+.container__right {
+  flex: 1;
+  position: relative;
+}
+
+.ribbon__white {
+  position: absolute;
+  height: 100%;
+  width: 400px;
+  top: 0;
+  right: 5rem;
+  text-align: center;
+  background-color: var(--extra-light);
+}
+
+.ribbon__white h3 {
+  padding: 2rem;
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: var(--text-dark);
+}
+
+.ribbon__white h3 span {
+  color: var(--primary-color);
+}
+
+
+
+.container__left img {
+  position: absolute;
+  bottom: 0;
+  right: calc(5rem + 50px);
+  width: 520px;
+}
+
+.container__right {
+  padding-left: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.navbar {
+  padding: 2.5rem 0;
+  position: absolute;
+  top: 0;
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.navbar span {
+  padding: 0.5rem;
+  color: var(--extra-light);
+  font-size: 1rem;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.navbar span:hover {
+  color: var(--primary-color);
+  cursor: pointer;
+}
+
+.navbar .contact {
+  width: 80px;
+  text-align: center;
+  font-weight: 500px;
+  border-radius: 5rem;
+  background-color: var(--primary-color);
+  color: var(--extra-light) !important;
+  transition: 0.3s;
+}
+
+.navbar .contact:hover {
+  background-color: var(--primary-color-dark);
+}
+
+.content {
+  max-width: var(--max-width);
+  display: grid;
+  gap: 1rem;
+}
+
+.content h1 {
+  color: var(--extra-light);
+  font-size: 4rem;
+  line-height: 4rem;
+}
+
+.content h1 span {
+  color: var(--primary-color);
+}
+
+.content p {
+  color: var(--extra-light);
+}
